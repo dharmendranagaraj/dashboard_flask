@@ -1,0 +1,568 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<!-- Main boxes (Statistics box) -->
+<section>
+    <div class="pt-3" style="padding-left: 1%; padding-right:1%;">
+        <div class="row flex">
+            <div class="col-md-3 col-6">
+                <!-- small box -->
+                <div class="small_box shadow rounded " style="background-color: #17a2b8;">
+                    <div class="d-flex justify-content-between">
+                        <div class=" align-self-left" style="padding: 5px 15px; ">
+                            <h3 class="ion_text">150</h3>
+                            <!-- <p>Temperature</p> -->
+                        </div>
+                        <div class=" " style="text-align: right; ">
+                            <i class="ion ion-thermometer  "></i>
+                            <!-- <i class="ion ion-bag"></i> -->
+                        </div>
+                    </div>
+                    <div class="small_box_footer">
+                        <a class="ion_desc ">
+                            <p>Temperature</p>
+                            <!-- <i class="fas fa-arrow-circle-right"></i> -->
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+
+            <div class="col-md-3 col-6">
+                <!-- small box -->
+                <div class="small_box bg-success shadow rounded">
+                    <div class="d-flex justify-content-between">
+                        <div class=" align-self-left" style="padding: 5px 15px; ">
+                            <h3 class="ion_text">56</h3>
+                        </div>
+                        <div class=" " style="text-align: right; ">
+                            <i class="ion ion-waterdrop  "></i>
+                        </div>
+                    </div>
+                    <div class="small_box_footer">
+                        <a class="ion_desc ">
+                            <p>Water</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+            <div class="col-md-3 col-6">
+                <!-- small box -->
+                <div class="small_box bg-warning shadow rounded">
+                    <div class="d-flex justify-content-between">
+                        <div class=" align-self-left" style="padding: 5px 15px; ">
+                            <h3 class="ion_text">44</h3>
+                        </div>
+                        <div class=" " style="text-align: right; ">
+                            <i class="ion ion-battery-charging"></i>
+                        </div>
+                    </div>
+                    <div class="small_box_footer">
+                        <a class="ion_desc ">
+                            <p>Power</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- ./col -->
+
+
+            <div class="col-md-3 col-6">
+                <!-- small box -->
+                <div class="small_box bg-danger shadow rounded">
+                    <!-- <div class="inner1" style="padding: 5px 5px 0px 5px;">
+                            <h3>65</h3>
+                        </div>
+                        <div class="icon">
+                            <i class="ion ion-flame" style="font-size:50px; top: 5px;"></i>
+                        </div>
+                        <a href="#" class="small-box-footer">Heat</a> -->
+
+                    <div class="d-flex justify-content-between">
+                        <div class=" align-self-left" style="padding: 5px 15px; ">
+                            <h3 class="ion_text">65</h3>
+                        </div>
+                        <div class="icon " style="text-align: right; ">
+                            <i class="ion ion-flame"></i>
+                        </div>
+                    </div>
+                    <div class="small_box_footer">
+                        <a class="ion_desc ">
+                            <p>Heat</p>
+                        </a>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+            <!-- ./col -->
+
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</section>
+
+<!-- Main content -->
+<section class="content" style="padding-left: 1%; padding-right:1%; height:70vh; width:auto;">
+    <div class="row">
+        <div class="col-12">
+
+            <div class="">
+                <!-- class="card"-->
+
+                <!-- <div class="card-header">
+                            <h3 class="card-title">DataTable with minimal features & hover style</h3>
+                        </div> -->
+                <!-- /.card-header -->
+
+                <div class="card-body1" style="margin: 0rem 0.50rem;">
+                    <table id="example2" class="table table-bordered table-hover table-sm " style="border-radius:10px;">
+                        <thead class="table-dark text-center">
+                            <tr>
+                                <th>Rendering engine</th>
+                                <th>Browser</th>
+                                <th>Platform(s)</th>
+                                <th>Engine version</th>
+                                <th>CSS grade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr style="height: 10px; min-height: 5px; max-height: 10px;">
+                                <td>Trident</td>
+                                <td>Internet
+                                    Explorer 4.0
+                                </td>
+                                <td>Win 95+</td>
+                                <td> 4</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                    Explorer 5.0
+                                </td>
+                                <td>Win 95+</td>
+                                <td>5</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                    Explorer 5.5
+                                </td>
+                                <td>Win 95+</td>
+                                <td>5.5</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                    Explorer 6
+                                </td>
+                                <td>Win 98+</td>
+                                <td>6</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet Explorer 7</td>
+                                <td>Win XP SP2+</td>
+                                <td>7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>AOL browser (AOL desktop)</td>
+                                <td>Win XP</td>
+                                <td>6</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 1.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 1.5</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 2.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 3.0</td>
+                                <td>Win 2k+ / OSX.3+</td>
+                                <td>1.9</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Camino 1.0</td>
+                                <td>OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Camino 1.5</td>
+                                <td>OSX.3+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Netscape 7.2</td>
+                                <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                <td>1.7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Netscape Browser 8</td>
+                                <td>Win 98SE+</td>
+                                <td>1.7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Netscape Navigator 9</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.0</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.1</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.2</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.2</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.3</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.3</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.4</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.4</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.5</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.5</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.6</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>1.6</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.7</td>
+                                <td>Win 98+ / OSX.1+</td>
+                                <td>1.7</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Mozilla 1.8</td>
+                                <td>Win 98+ / OSX.1+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Seamonkey 1.1</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Epiphany 2.20</td>
+                                <td>Gnome</td>
+                                <td>1.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>Safari 1.2</td>
+                                <td>OSX.3</td>
+                                <td>125.5</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>Safari 1.3</td>
+                                <td>OSX.3</td>
+                                <td>312.8</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>Safari 2.0</td>
+                                <td>OSX.4+</td>
+                                <td>419.3</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>Safari 3.0</td>
+                                <td>OSX.4+</td>
+                                <td>522.1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>OmniWeb 5.5</td>
+                                <td>OSX.4+</td>
+                                <td>420</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>iPod Touch / iPhone</td>
+                                <td>iPod</td>
+                                <td>420.1</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Webkit</td>
+                                <td>S60</td>
+                                <td>S60</td>
+                                <td>413</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 7.0</td>
+                                <td>Win 95+ / OSX.1+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 7.5</td>
+                                <td>Win 95+ / OSX.2+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 8.0</td>
+                                <td>Win 95+ / OSX.2+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 8.5</td>
+                                <td>Win 95+ / OSX.2+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 9.0</td>
+                                <td>Win 95+ / OSX.3+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 9.2</td>
+                                <td>Win 88+ / OSX.3+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera 9.5</td>
+                                <td>Win 88+ / OSX.3+</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Opera for Wii</td>
+                                <td>Wii</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Nokia N800</td>
+                                <td>N800</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Nintendo DS browser</td>
+                                <td>Nintendo DS</td>
+                                <td>8.5</td>
+                                <td>C/A<sup>1</sup></td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.1</td>
+                                <td>KDE 3.1</td>
+                                <td>3.1</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.3</td>
+                                <td>KDE 3.3</td>
+                                <td>3.3</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.5</td>
+                                <td>KDE 3.5</td>
+                                <td>3.5</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 4.5</td>
+                                <td>Mac OS 8-9</td>
+                                <td>-</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 5.1</td>
+                                <td>Mac OS 7.6-9</td>
+                                <td>1</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 5.2</td>
+                                <td>Mac OS 8-X</td>
+                                <td>1</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>NetFront 3.1</td>
+                                <td>Embedded devices</td>
+                                <td>-</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>NetFront 3.4</td>
+                                <td>Embedded devices</td>
+                                <td>-</td>
+                                <td>A</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Dillo 0.8</td>
+                                <td>Embedded devices</td>
+                                <td>-</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Links</td>
+                                <td>Text only</td>
+                                <td>-</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Lynx</td>
+                                <td>Text only</td>
+                                <td>-</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>IE Mobile</td>
+                                <td>Windows Mobile 6</td>
+                                <td>-</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>PSP browser</td>
+                                <td>PSP</td>
+                                <td>-</td>
+                                <td>C</td>
+                            </tr>
+                            <tr>
+                                <td>Other browsers</td>
+                                <td>All others</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>U</td>
+                            </tr>
+                        </tbody>
+                        <!-- <tfoot>
+                                    <tr>
+                                        <th>Rendering engine</th>
+                                        <th>Browser</th>
+                                        <th>Platform(s)</th>
+                                        <th>Engine version</th>
+                                        <th>CSS grade</th>
+                                    </tr>
+                                </tfoot> -->
+                    </table>
+                </div>
+                <!-- /.card-body -->
+
+            </div>
+            <!-- /.card -->
+
+
+        </div>
+        <!-- /.col -->
+    </div>
+    <!-- /.row -->
+
+</section>
+<!-- /.content -->
+
+{% endblock %}
